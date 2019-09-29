@@ -6,7 +6,7 @@ class Solution1 {
         var num: Int = 0
 
         for (s in S) {
-            var match = if (s.toString().toRegex().find(J) != null) num++ else continue
+            if (s.toString().toRegex().find(J) != null) num++ else continue
         }
 
         println(num)
